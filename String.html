@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // đếm số lần xuất hiện của 'a'
+
+    let str = "Tôi yêu ngôn ngữ lập trình Javascript";
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str.charAt(i) === 'a') {
+            count++;
+        }
+    }
+    console.log(count);
+
+    // Tách chuỗi và đếm số lượng từ trong chuỗi
+
+    var String = str.split(" ",str.length);
+    console.log(String);
+    console.log(String.length);
+
+    // Thay thế 'Javascript' bằng 'Typescript'
+
+    var Change = str.replace('Javascript','Typescript');
+    console.log(Change);
+</script>
+</body>
+</html>

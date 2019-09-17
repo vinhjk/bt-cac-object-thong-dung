@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // sinh số ngẫu nhiên
+    let num1 = Math.floor(Math.random() * 11);
+    console.log(num1);
+    let num2 = Math.floor(Math.random() * 401);
+    console.log(num2);
+    let num3 = Math.floor(Math.random() * 50) + 50;
+    console.log(num3);
+
+    //tìm giá trị nhỏ nhất
+
+    let num = [5, 7, 2, 9];
+    let max = num[0];
+    for (let i = 0; i < num.length; i++) {
+        if (num[i] > max) {
+            max = num[i];
+        }
+    }
+    console.log(max);
+
+    // lũy thừa 53
+
+    for (let i = 1; i < 11; i++) {
+        let Num= Math.pow(53,i);
+        console.log(Num);
+    }
+
+    // Diện tích hình tròn
+
+    let r = 5;
+    var S = r * r * Math.PI;
+    console.log(S.toFixed(2));
+</script>
+</body>
+</html>

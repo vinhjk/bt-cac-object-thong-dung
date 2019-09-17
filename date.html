@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let MyDate = function (day, month, year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+        this.getDay = function () {
+            return this.day;
+        };
+        this.getMonth = function () {
+            return this.month;
+        };
+        this.getYear = function () {
+            return this.year;
+        };
+        this.setDay = function (day) {
+            this.day = day;
+        };
+        this.setMonth = function (month) {
+            this.month = month;
+
+        };
+        this.setYear = function (year) {
+            this.year = year;
+        };
+    };
+    let date = new MyDate(23, 12, 1999);
+    let day1 = date.getDay();
+    let month1 = date.getMonth();
+    let year1 = date.getYear();
+    let date2 = new MyDate(17, 9, 2019);
+    let day2 = date2.getDay();
+    let month2 = date2.getMonth();
+    let year2 = date2.getYear();
+    let YEAR = year2 - year1;
+    let MONTH = YEAR * 12 - (month1 - month2);
+    let DATE = YEAR * 365;
+    let HOURS = DATE * 24;
+    let MINUTES = HOURS * 60;
+    let SECONDS = MINUTES * 60;
+    alert("i alive about : " + YEAR + " years");
+    alert("i alive about : " + MONTH + " months");
+    alert("i alive about : " + DATE + " days");
+    alert("i alive about : " + HOURS + " hours");
+    alert("i alive about : " + MINUTES + " minutes");
+    alert("i alive about : " + SECONDS + " s");
+</script>
+</body>
+</html>
